@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Home(){
   return (
     <>
-    <main className="bg-primary min-h-screen px-6 py-12">
+    {/* <main className="bg-primary min-h-screen px-6 py-12">
       <h1 className="font-display text-5xl text-accent text-center mb-10">
         GALLERY
       </h1>
@@ -24,7 +24,7 @@ export default function Home(){
           </div>
         ))}
       </div>
-    </main>
+    </main> */}
     </>
   )
 }
