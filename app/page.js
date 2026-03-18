@@ -1,4 +1,4 @@
-import { assets, features, galleryImages } from "@/assets/assets";
+import { assets, features, galleryImages, testimonials } from "@/assets/assets";
 import { ChevronRight, Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -212,10 +212,12 @@ export default function Home() {
         </div>
       </section>
       {/* Gallery Section */}
-         <section className="py-24 bg-primary">
+      <section className="py-24 bg-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-accent text-xs font-bold uppercase tracking-[0.3em] mb-3">Our Facility</p>
+            <p className="text-accent text-xs font-bold uppercase tracking-[0.3em] mb-3">
+              Our Facility
+            </p>
             <h2
               className="text-5xl sm:text-7xl text-white leading-none tracking-wider"
               style={{ fontFamily: "'Bebas Neue', sans-serif" }}
@@ -230,7 +232,9 @@ export default function Home() {
               <div
                 key={i}
                 className={`relative overflow-hidden rounded-sm group ${
-                  i === 0 || i === 5 ? 'md:col-span-1 h-64 md:h-80' : 'h-52 md:h-64'
+                  i === 0 || i === 5
+                    ? "md:col-span-1 h-64 md:h-80"
+                    : "h-52 md:h-64"
                 }`}
               >
                 <Image
@@ -243,6 +247,57 @@ export default function Home() {
                   <div className="w-10 h-10 border-2 border-accent rounded-full flex items-center justify-center">
                     <span className="text-accent text-xl">+</span>
                   </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* Testimonials Section */}
+      <section className="py-24 bg-primary relative overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white/20 rounded-full blur-3xl pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <p className="text-accent text-xs font-bold uppercase tracking-[0.3em] mb-3">
+              Member Stories
+            </p>
+            <h2 className="text-5xl sm:text-7xl text-white leading-none tracking-wider font-display">
+              REAL RESULTS,
+              <br />
+              <span className="text-accent">REAL PEOPLE</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {testimonials.map((t, i) => (
+              <div
+                key={t.name}
+                className="relative p-8 bg-primary border border-white/5 rounded-sm group border-accent transition-all duration-300 hover:-translate-y-1"
+              >
+                {/* Stars */}
+                <div className="flex gap-1 mb-5">
+                  {Array.from({ length: t.rating }).map((_, j) => (
+                    <Star
+                      key={j}
+                      className="w-4 h-4 text-brand-red fill-white"
+                    />
+                  ))}
+                </div>
+                <blockquote className="text-white/70 text-sm leading-relaxed mb-6 italic">
+                  "{t.text}"
+                </blockquote>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-white font-bold text-sm">
+                    {t.initials}
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold text-sm">{t.name}</p>
+                    <p className="text-white/40 text-xs">{t.role}</p>
+                  </div>
+                </div>
+                <div className="absolute top-6 right-6 text-6xl leading-none text-secondary font-display">
+                  "
                 </div>
               </div>
             ))}
