@@ -6,6 +6,12 @@ import image_three from "../assets/image-three.jpg";
 import image_four from "../assets/image-four.jpg";
 import image_five from "../assets/image-five.jpg";
 import image_six from "../assets/image-six.jpg";
+import weight_training from "../assets/weight-training.jpg";
+import cardio_training from "../assets/cardio-training.jpg";
+import personal_training from "../assets/personal-training.jpg";
+import yoga_classes from "../assets/yoga-class.jpg";
+import crossfit from "../assets/cross-fit.jpg";
+import group_fitness from "../assets/group-fitness.jpg";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { Crown, Star } from "lucide-react";
 import {
@@ -28,6 +34,12 @@ export const assets = {
   image_four,
   image_five,
   image_six,
+  weight_training,
+  cardio_training,
+  personal_training,
+  yoga_classes,
+  crossfit,
+  group_fitness,
 };
 
 export const galleryImages = [
@@ -113,7 +125,7 @@ export const services = [
     description:
       "Access over 150 free weight stations and machine setups. Whether you're targeting hypertrophy, powerlifting, or functional strength, our weight floor has everything you need to reach peak performance.",
     image:
-      "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=700&q=80",
+      weight_training,
     features: [
       "Olympic Lifting Platforms",
       "Full Free-Weight Range",
@@ -131,7 +143,7 @@ export const services = [
     description:
       "Our 80-machine cardio floor features treadmills, ellipticals, rowing machines, air bikes, stair climbers and more. Track every metric in real-time with our integrated fitness displays.",
     image:
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=700&q=80",
+      cardio_training,
     features: [
       "80+ Cardio Machines",
       "Heart Rate Monitoring",
@@ -149,7 +161,7 @@ export const services = [
     description:
       "Work 1-on-1 with our certified elite personal trainers who craft individualized programs tailored to your specific goals, fitness level, and schedule. The fastest route to your best self.",
     image:
-      "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=700&q=80",
+      personal_training,
     features: [
       "Certified Elite Trainers",
       "Custom Program Design",
@@ -167,7 +179,7 @@ export const services = [
     description:
       "From power yoga to restorative flow, our certified yoga instructors guide you through practices that build flexibility, core strength, and mental clarity. Classes for all levels, every day.",
     image:
-      "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=700&q=80",
+      yoga_classes,
     features: [
       "Hot Yoga Studio",
       "All Skill Levels Welcome",
@@ -185,7 +197,7 @@ export const services = [
     description:
       "Sri Lanka's premier CrossFit facility. Our dedicated 3,000 sq ft box offers daily WODs coached by CF-L2 certified coaches. Build explosive power, endurance, and mental toughness.",
     image:
-      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=700&q=80",
+      crossfit,
     features: [
       "Dedicated CrossFit Box",
       "CF-L2 Certified Coaches",
@@ -203,7 +215,7 @@ export const services = [
     description:
       "High-energy group classes including HIIT, Zumba, BodyPump, Spin, and more. Coached by motivating instructors, these classes are designed to challenge you while making fitness genuinely fun.",
     image:
-      "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=700&q=80",
+      group_fitness,
     features: [
       "20+ Class Types Weekly",
       "Live DJ Sessions",
