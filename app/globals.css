@@ -30,22 +30,19 @@
 
   .text-primary { color: var(--color-black); }
   .text-secondary { color: var(--color-gray); }
+   /* Text Colors */
   .text-accent { color: var(--color-yellow); }
-  .hover-accent:hover {
-    color: var(--color-yellow);
-  }
-   .border-accent {
-    border-color: var(--color-yellow);
-  }
-
-  .hover-border-accent:hover {
-    border-color: var(--color-yellow);
-  }
-
-  .active-accent:active {
-    color: var(--color-yellow);
-  }
   .text-brown { color: var(--color-brown); }
+
+  /* Hover Text */
+  .hover-accent:hover { color: var(--color-yellow); }
+
+  /* Active Text */
+  .active-accent:active { color: var(--color-yellow); }
+
+  /* Borders */
+  .border-accent { border-color: var(--color-yellow); }
+  .hover-border-accent:hover { border-color: var(--color-yellow); }
 }
 
 

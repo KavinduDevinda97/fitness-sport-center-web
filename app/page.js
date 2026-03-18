@@ -211,6 +211,44 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Gallery Section */}
+         <section className="py-24 bg-primary">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <p className="text-accent text-xs font-bold uppercase tracking-[0.3em] mb-3">Our Facility</p>
+            <h2
+              className="text-5xl sm:text-7xl text-white leading-none tracking-wider"
+              style={{ fontFamily: "'Bebas Neue', sans-serif" }}
+            >
+              THE FITNESS
+              <span className="text-accent"> KINGDOM</span>
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+            {galleryImages.map((img, i) => (
+              <div
+                key={i}
+                className={`relative overflow-hidden rounded-sm group ${
+                  i === 0 || i === 5 ? 'md:col-span-1 h-64 md:h-80' : 'h-52 md:h-64'
+                }`}
+              >
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="w-10 h-10 border-2 border-accent rounded-full flex items-center justify-center">
+                    <span className="text-accent text-xl">+</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </>
   );
 }
