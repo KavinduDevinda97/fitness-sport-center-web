@@ -31,6 +31,13 @@
   .text-primary { color: var(--color-black); }
   .text-secondary { color: var(--color-gray); }
   .text-accent { color: var(--color-yellow); }
+  .hover-accent:hover {
+    color: var(--color-yellow);
+  }
+
+  .active-accent:active {
+    color: var(--color-yellow);
+  }
   .text-brown { color: var(--color-brown); }
 }
 

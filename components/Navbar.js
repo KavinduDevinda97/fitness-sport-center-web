@@ -42,7 +42,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
             <div className="relative  flex items-center justify-center rounded-sm rotate-0 group-hover:rotate-3 transition-transform duration-300 mt-4">
-              <Image src={assets.logo} alt="IronPeak Logo" className="  text-white" width={120} height={120} />
+              <Image src={assets.logo} alt="FITNESS Logo" className="  text-white" width={120} height={120} />
             </div>
             <div className="flex flex-col leading-none">
               <span
@@ -84,7 +84,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-4">
             <Link
               href="/pricing"
-              className="relative px-3 py-2.5 bg-accent text-white text-sm font-bold uppercase tracking-widest rounded-md overflow-hidden group transition-all duration-300 hover:bg-accent  hover:shadow-lg hover:shadow-brand-red/30"
+              className="relative px-3 py-2.5 bg-accent text-white text-sm font-bold uppercase tracking-widest rounded-md overflow-hidden group transition-all duration-300 hover:bg-accent  hover:shadow-lg "
             >
               <span className="relative z-10">Join Now</span>
             </Link>
@@ -93,7 +93,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden w-10 h-10 flex items-center justify-center text-white hover:text-brand-red transition-colors"
+            className="md:hidden w-10 h-10 flex items-center justify-center text-white hover-accent transition-colors"
             aria-label="Toggle menu"
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -116,7 +116,7 @@ export default function Navbar() {
                 href={link.href}
                 className={`flex items-center gap-3 px-4 py-3 rounded-sm text-sm font-semibold uppercase tracking-widest transition-all duration-200 ${
                   isActive
-                    ? 'bg-brand-red text-white'
+                    ? 'bg-accrnt text-white'
                     : 'text-white/70 hover:text-white hover:bg-white/5'
                 }`}
               >
@@ -127,7 +127,7 @@ export default function Navbar() {
           <div className="pt-4 border-t border-white/10">
             <Link
               href="/plans"
-              className="block text-center px-6 py-3 bg-brand-red text-white text-sm font-bold uppercase tracking-widest rounded-sm hover:bg-brand-red-light transition-colors"
+              className="block text-center px-6 py-3 bg-accent text-white text-sm font-bold uppercase tracking-widest rounded-sm -light transition-colors"
             >
               Join Now — View Plans
             </Link>

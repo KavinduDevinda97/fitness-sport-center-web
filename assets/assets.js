@@ -61,7 +61,7 @@ export const testimonials = [
   {
     name: "Ashan Perera",
     role: "Software Engineer",
-    text: "IronPeak completely transformed my body and mindset. Lost 18kg in 5 months with the personal training program. The coaches are phenomenal!",
+    text: "FITNESS completely transformed my body and mindset. Lost 18kg in 5 months with the personal training program. The coaches are phenomenal!",
     rating: 5,
     initials: "AP",
   },
@@ -248,9 +248,9 @@ export const plans = [
     period: "month",
     icon: Star,
     popular: true,
-    color: "border-brand-red",
-    accentColor: "text-brand-red",
-    bgAccent: "bg-brand-red/10",
+    color: "border-red",
+    accentColor: "text-accent",
+    bgAccent: "bg-red/10",
     features: [
       { text: "Full Gym Access (7 Days)", included: true },
       { text: "Cardio Zone Access", included: true },
@@ -326,7 +326,7 @@ export const contactInfo = [
   {
     Icon: Mail,
     label: "Email",
-    lines: ["info@ironpeakgym.lk", "memberships@ironpeakgym.lk"],
+    lines: ["info@ftsgym.lk", "memberships@ftsgym.lk"],
   },
   {
     Icon: Clock,

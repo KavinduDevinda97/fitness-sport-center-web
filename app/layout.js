@@ -1,6 +1,7 @@
 import { Bebas_Neue, Be_Vietnam_Pro } from 'next/font/google'
 import "./globals.css";
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 
 
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
