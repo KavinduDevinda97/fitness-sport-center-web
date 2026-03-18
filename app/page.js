@@ -1,4 +1,4 @@
-import { assets, galleryImages } from "@/assets/assets";
+import { assets, features, galleryImages } from "@/assets/assets";
 import { ChevronRight, Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,6 +6,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
+      {/* Hero Section */}
       <section className="relative min-h-screen flex  justify-start overflow-hidden">
         {/* BG image */}
         <div className="absolute inset-0 z-0">
@@ -77,10 +78,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section
-        className="py-24 lg:py-32  relative overflow-hidden"
-        id="about"
-      >
+      {/* About Section */}
+      <section className="py-24 lg:py-32  relative overflow-hidden" id="about">
         {/* Background decoration */}
         <div className="absolute top-0 right-0 w-96 h-96 rounded-full  blur-3xl pointer-events-none" />
 
@@ -118,7 +117,7 @@ export default function Home() {
                   </div>
                   <div className="relative h-64 rounded-sm overflow-hidden group">
                     <Image
-                     src={assets.image_three}
+                      src={assets.image_three}
                       alt="GYM crossfit area"
                       fill
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -128,16 +127,10 @@ export default function Home() {
               </div>
               {/* Badge */}
               <div className="absolute -bottom-6 -right-6 w-28 h-28 bg-accent rounded-full flex flex-col items-center justify-center text-white z-10 shadow-2xl ">
-                <span
-                  className="text-3xl leading-none tracking-wide font-display"
-                  
-                >
+                <span className="text-3xl leading-none tracking-wide font-display">
                   EST.
                 </span>
-                <span
-                  className="text-xl leading-none tracking-wide font-display"
-                  
-                >
+                <span className="text-xl leading-none tracking-wide font-display">
                   2026
                 </span>
               </div>
@@ -148,20 +141,17 @@ export default function Home() {
               <p className="text-accent text-xs font-bold uppercase tracking-[0.3em] mb-3">
                 About FST
               </p>
-              <h2
-                className="text-5xl font-display sm:text-6xl lg:text-7xl text-white leading-none tracking-wider mb-6"
-                
-              >
+              <h2 className="text-5xl font-display sm:text-6xl lg:text-7xl text-white leading-none tracking-wider mb-6">
                 MORE THAN
                 <br />
                 <span className="text-accent">A GYM</span>
               </h2>
               <p className="text-white/60 leading-relaxed mb-5">
-                FITNESS SPORTS CENTER isn't just a fitness center — it's a transformation hub
-                where athletes, beginners, and everyone in between come to
-                shatter limits. Built on the philosophy that every person
-                deserves elite-level resources, we've created a space that
-                rivals the world's best training facilities.
+                FITNESS SPORTS CENTER isn't just a fitness center — it's a
+                transformation hub where athletes, beginners, and everyone in
+                between come to shatter limits. Built on the philosophy that
+                every person deserves elite-level resources, we've created a
+                space that rivals the world's best training facilities.
               </p>
               <p className="text-white/60 leading-relaxed mb-8">
                 Our 15,000 sq ft facility houses over 300 pieces of premium
@@ -195,6 +185,29 @@ export default function Home() {
                 Explore Services <ChevronRight className="w-4 h-4" />
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+      {/* Features Section */}
+      <section className="py-20 bg-primary">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {features.map(({ Icon, title, desc }, i) => (
+              <div
+                key={title}
+                className="relative p-8 bg-secondary border border-accent rounded-sm group hover-accent hover-border-accent  transition-all duration-300 hover:-translate-y-1"
+              >
+                <div className="w-12 h-12 flex items-center justify-center  border border-accent rounded-sm mb-5  transition-colors">
+                  <Icon className="w-6 h-6 " />
+                </div>
+                <h3 className="text-white font-display text-base mb-2 tracking-wide">
+                  {title}
+                </h3>
+                <p className="text-white/50 text-sm leading-relaxed">{desc}</p>
+                {/* Corner accent */}
+                <div className="absolute bottom-0 left-0 w-0 h-[2px] bg-accent group-hover:w-full transition-all duration-500" />
+              </div>
+            ))}
           </div>
         </div>
       </section>
