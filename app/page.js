@@ -56,7 +56,7 @@ export default function Home() {
             >
               <Link
                 href="/pricing"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-accent text-white font-bold uppercase tracking-widest text-sm rounded-lg -light transition-all duration-300 shadow-lg   hover:gap-3 animate-pulse-red"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-accent text-white font-bold uppercase tracking-widest text-sm rounded-lg -light transition-all duration-300 shadow-lg hover:scale-110 hover:gap-3"
               >
                 Join Now <ChevronRight className="w-4 h-4" />
               </Link>
@@ -180,7 +180,7 @@ export default function Home() {
 
               <Link
                 href="/services"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-accent text-white font-bold uppercase tracking-widest text-sm rounded-lg  transition-all duration-300 hover:gap-3"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-accent text-white font-bold uppercase tracking-widest text-sm rounded-lg  transition-all duration-300 hover:scale-110 hover:gap-3"
               >
                 Explore Services <ChevronRight className="w-4 h-4" />
               </Link>

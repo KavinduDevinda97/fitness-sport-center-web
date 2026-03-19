@@ -84,7 +84,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-4">
             <Link
               href="/pricing"
-              className="relative px-3 py-2.5 bg-accent text-white text-sm font-bold uppercase tracking-widest rounded-md overflow-hidden group transition-all duration-300 hover:bg-accent  hover:shadow-lg "
+              className="relative px-5 py-2.5 bg-accent text-white text-sm font-bold uppercase tracking-widest rounded-md overflow-hidden group transition-all duration-300 hover:scale-110  hover:shadow-lg "
             >
               <span className="relative z-10">Join Now</span>
             </Link>

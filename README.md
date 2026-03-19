@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🏋️ FITNESS SPORTS CENTER — Promotional Website
 
-## Getting Started
+A fully responsive, modern promotional website for **FITNESS SPORTS CENTER** built with **Next.js 16 App Router**, **React**, and **Tailwind CSS**.
 
-First, run the development server:
+---
+
+## 🚀 Live Demo
+👉 https://fitness-sport-center-sl.vercel.app/
+
+## ✨ Features
+
+- **Next.js 16** with App Router (`/app` directory)
+- **Tailwind CSS** — utility-first styling with custom theme tokens
+- **Fully responsive** — mobile-first design, tested from 320px upward
+- **Smooth scroll animations** — Intersection Observer–powered reveal effects
+- **Custom animated navbar** — scroll-aware, with mobile slide menu
+- **Image gallery** — hover zoom effects
+- **Contact form** — client-side validation + loading + success state
+
+
+---
+
+## 📄 Pages
+
+| Route | Description |
+|---|---|
+| `/` | Hero, About, Gallery, Testimonials |
+| `/services` | 6 service cards — Weight Training, Cardio, PT, Yoga, CrossFit, Group |
+| `/pricing` | 3 pricing tiers — Basic, Standard, Premium + FAQ |
+| `/contact` | Inquiry form with full validation & success message |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+
+- npm or yarn
+
+### Installation
 
 ```bash
+# 1. Clone or unzip the project
+cd fitness-sport-center-web
+
+# 2. Install dependencies
+npm install
+
+# 3. Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# 4. Open in browser
+# http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Build for Production
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Deploy to Vercel (Recommended)
 
-## Learn More
+```bash
+npm install -g vercel
+vercel
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Project Structure
 
-## Deploy on Vercel
+```
+gym-website/
+├── app/
+│   ├── layout.js          # Root layout (Navbar + Footer wrapper)
+│   ├── page.js            # Home page
+│   ├── not-found.js       # Custom 404 page
+│   ├── globals.css        # Global styles + Tailwind directives
+│   ├── services/
+│   │   └── page.js        # Services page
+│   ├── pricing/
+│   │   └── page.js        # Membership Plans page
+│   └── contact/
+│       └── page.js        # Contact page (client component)
+├── components/
+│   ├── Navbar.js          # Sticky responsive navbar
+│   ├── Footer.js          # Footer with social links
+├── public/                # Static assets (add images here)
+├── postcss.config.mjs
+├── assets
+├── next.config.mjs
+├── jsconfig.json
+└── package.json
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
+## 📦 Dependencies
+
+| Package | Version | Purpose |
+|---|---|---|
+| `next` | 16.1.7 | Framework |
+| `react` | 19 | UI library |
+| `react-dom` | 19.2.3 | DOM renderer |
+| `lucide-react` | 0.577.0 | Icon library |
+| `tailwindcss` | 4 | CSS framework |

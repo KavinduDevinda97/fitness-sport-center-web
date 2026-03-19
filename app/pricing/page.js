@@ -89,8 +89,8 @@ export default function PricingPage() {
                       href="/contact"
                       className={`block w-full text-center py-3.5 rounded-sm font-bold uppercase tracking-widest text-sm transition-all duration-300 ${
                         plan.popular
-                          ? "bg-accent text-white"
-                          : "border border-white/20 text-white hover:border-white/50 hover:bg-white/5"
+                          ? "bg-accent text-white hover:scale-105"
+                          : "border border-white/20 text-white hover:border-white/50 hover:bg-white/5 hover:scale-105"
                       }`}
                     >
                       Get Started
@@ -139,7 +139,7 @@ export default function PricingPage() {
             </div>
             <Link
               href="/contact"
-              className="flex-shrink-0 inline-flex items-center gap-2 px-6 py-3 bg-accent text-white text-sm font-bold uppercase tracking-widest rounded-sm "
+              className="flex-shrink-0 inline-flex items-center gap-2 px-6 py-3 bg-accent text-white text-sm font-bold uppercase tracking-widest rounded-sm hover:scale-105 "
             >
               Enquire Now <ChevronRight className="w-4 h-4" />
             </Link>

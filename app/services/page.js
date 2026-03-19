@@ -125,13 +125,13 @@ export default function ServicesPage() {
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/pricing"
-              className="inline-flex items-center gap-2 px-10 py-4 bg-accent text-white font-bold uppercase tracking-widest text-sm rounded-sm  transition-all duration-300"
+              className="inline-flex items-center gap-2 px-10 py-4 bg-accent text-white font-bold uppercase tracking-widest text-sm rounded-sm  hover:scale-105 transition-all duration-300"
             >
               View Plans <ChevronRight className="w-4 h-4" />
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 px-10 py-4 border-2 border-white text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-white hover:text-black transition-all duration-300"
+              className="inline-flex items-center gap-2 px-10 py-4 border-2 border-white text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:border-white/50 hover:bg-white/5 hover:scale-105 hover:gap-3 transition-all duration-300"
             >
               Book a Free Tour
             </Link>
