@@ -21,6 +21,8 @@ const vietnam = Be_Vietnam_Pro({
 export const metadata = {
   title: "FITNESS SPORTS CENTER",
   description: "Experience the ultimate fitness journey at our state-of-the-art gym. Join us to achieve your health goals with expert trainers, cutting-edge equipment, and a supportive community. Your transformation starts here!",
+  keywords: 'gym, fitness, weight training, cardio, yoga, CrossFit, personal training, membership',
+
 };
 
 export default function RootLayout({ children }) {

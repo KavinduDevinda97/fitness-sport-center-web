@@ -3,6 +3,11 @@ import { ChevronRight, Clock, Users } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
+
+export const metadata = {
+  title: 'Services — FITNESS SPORTS CENTER Gym',
+  description: 'Explore our full range of fitness services: Weight Training, Cardio, Personal Training, Yoga, CrossFit, and Group Classes.',
+}
 export default function ServicesPage() {
   return (
    
@@ -16,10 +21,10 @@ export default function ServicesPage() {
             fill
             className="object-cover object-center opacity-10"
           />
-          <div className="absolute inset-0 " />
+          
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-accent text-xs font-bold uppercase tracking-[0.3em] mb-3">What We Offer</p>
+          <p className="text-accent text-xs font-bold uppercase tracking-[0.3em] mb-3">✦ What We Offer ✦</p>
           <h1
             className="text-6xl sm:text-8xl lg:text-9xl text-white leading-none tracking-wider font-display"
             
