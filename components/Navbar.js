@@ -42,7 +42,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
             <div className="relative  flex items-center justify-center rounded-sm rotate-0 group-hover:rotate-3 transition-transform duration-300 mt-4">
-              <Image src={assets.logo} alt="FITNESS Logo" className="  text-white" width={120} height={120} />
+              <Image src={assets.logo} alt="FITNESS Logo" className="  text-white" width={80} height={80} />
             </div>
             <div className="flex flex-col leading-none">
               <span
